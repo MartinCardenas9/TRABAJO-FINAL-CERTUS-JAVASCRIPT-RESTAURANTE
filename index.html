@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicia Sesion</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  </head>
+  <body class="bg-secondary">
+    <div class="container d-flex vh-100">
+      <div class="row justify-content-center align-self-center w-100">
+        <div class="col-12 col-md-6 col-lg-4 border p-5 bg-light">
+            <h2 class="mb-4 text-center">Iniciar Sesión</h2>
+            <form id="formulario">
+              <div class="form-group">
+                <label for="inputUsername">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="inputUsername" name="inputUsername" placeholder="Introduce tu nombre de usuario">
+                <div class="invalid-feedback">
+                  Debe ingresar un nombre de usuario valido.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Introduce tu contraseña">
+                <div class="invalid-feedback">
+                  Debe ingresar su contraseña de usuario.
+                </div>
+              </div>
+              <br />
+              <button id="botonIniciarSesion" type="submit" class="btn btn-primary btn-block">Iniciar Sesion</button>
+            </form>
+            <div class="dropdown-divider my-3"></div>
+            <a class="dropdown-item text-center" href="/registry.html">¿No tienes una Cuenta?</a>
+        </div>
+      </div>
+    </div>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

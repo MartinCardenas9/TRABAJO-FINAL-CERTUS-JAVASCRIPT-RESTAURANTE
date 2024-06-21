@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body class="bg-secondary">
+    <div class="m-4">
+      <div>
+        <div class="row justify-content-center align-self-center w-100">
+          <div class="col-12 col-md-6 col-lg-4 border p-5 bg-light">
+            <h1 class="text-center">Registrarse</h1>
+            <form id="formulario">
+              <div class="form-group">
+                <label for="inputUsuario">Usuario:</label>
+                <input type="text" class="form-control" id="inputUsuario" name="inputUsuario" placeholder="Ingrese su usuario">
+                <div class="invalid-feedback">
+                  El usuario tiene que ser de 4 a 16 digitos y solo puede contener números, letras y guion bajo.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputNombre">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre" name="inputNombre" placeholder="Ingrese su nombre">
+                <div class="invalid-feedback">
+                  El nombre tiene que contener solo letras.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputContrasena">Contraseña:</label>
+                <input type="password" class="form-control" id="inputContrasena" name="inputContrasena">
+                <div class="invalid-feedback">
+                  La contraseña tiene que tener al menos 8 caracteres entre letras, números y un caracter especial.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputRepetirContrasena">Repetir Contraseña:</label>
+                <input type="password" class="form-control" id="inputRepetirContrasena" name="inputRepetirContrasena">
+                <div class="invalid-feedback">
+                  Ambas contraseñas deben ser iguales.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputCorreo">Correo:</label>
+                <input type="text" class="form-control" id="inputCorreo" name="inputCorreo" placeholder="Ingrese su correo">
+                <div class="invalid-feedback">
+                  Correo Electronico no valido.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputCelular">Número de Celular:</label>
+                <input type="text" class="form-control" id="inputCelular" name="inputCelular" placeholder="Ingrese su celular">
+                <div class="invalid-feedback">
+                  Número de Celular no valido, debe comenzar con el codigo +51.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputCuidad">Cuidad:</label>
+                <select id="inputCuidad" name="inputCuidad" class="form-control">
+                    <option value="" selected>Seleccione la cuidad</option>
+                    <option  value="arequipa">Arequipa</option>
+                    <option  value="cusco">Cusco</option>
+                    <option  value="lima">Lima</option>
+                </select>
+                <div class="invalid-feedback">Debe elegir una cuidad</div>
+              </div>
+              
+              <div>
+                <br />
+                <button id="botonEnviar" type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/form_validation.js"></script>
+
+  </body>
+</html>
